@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Car_Service">
-        <activity android:name=".SignUP"></activity>
+        <activity android:name=".U_Signup"></activity>
+        <activity android:name=".R_Signup" />
+        <activity android:name=".User_Sginup" />
+        <activity android:name=".Repairman_Signup" />
+        <activity android:name=".Submition" />
+        <activity android:name=".Forget_Password" />
+        <activity android:name=".SignUP" />
         <activity android:name=".Next2" />
         <activity android:name=".next" />
         <activity android:name=".login" />
@@ -23,5 +29,8 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
 </manifest>

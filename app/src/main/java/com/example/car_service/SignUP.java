@@ -2,6 +2,7 @@ package com.example.car_service;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -14,8 +15,14 @@ public class SignUP extends AppCompatActivity {
     }
 
     public void repermen(View view) {
+        Intent intent = new Intent(SignUP.this ,Repairman_Signup.class );
+        startActivity(intent);
+        finish();
     }
 
     public void user(View view) {
+        Intent intent = new Intent(SignUP.this ,User_Sginup.class );
+        startActivity(intent);
+        finish();
     }
 }

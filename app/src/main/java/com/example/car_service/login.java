@@ -15,9 +15,17 @@ public class login extends AppCompatActivity {
     }
 
     public void forget(View view) {
+        Intent i = new Intent(login.this,Forget_Password.class);
+        startActivity(i);
     }
 
     public void login(View view) {
+
+
+
+
+
+
     }
 
     public void signup(View view) {

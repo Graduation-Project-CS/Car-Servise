@@ -12,14 +12,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Language_City extends AppCompatActivity {
- Spinner splang , spcity;
+ Spinner splang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language__city);
 
         splang = (Spinner) findViewById(R.id.spinner);
-        spcity = (Spinner) findViewById(R.id.spinner2);
 
         List<String> categories = new ArrayList<String>();
         categories.add("کوردی");
@@ -31,29 +30,7 @@ public class Language_City extends AppCompatActivity {
 
         dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) ;
         splang.setAdapter(dataAdapter);
-        ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        List<String> categori = new ArrayList<String>();
-        categori.add("سلێمانی");
-        categori.add("هەولێر");
-        categori.add("کەرکوک");
-        categori.add("هەڵەبجە");
-        categori.add("دهۆک");
-        categori.add("زاخۆ");
-        categori.add("ئاکرێ");
-        categori.add("قەرەداغ");
-        categori.add("خانەقین");
-        categori.add("کفری");
-        categori.add("عەنکاوە");
-        categori.add("چەمچەماڵ");
-        categori.add("پیرەمەگروون");
-        categori.add("کەلار");
-
-        ArrayAdapter<String> dataAdapt = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, categori);
-
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) ;
-        spcity.setAdapter(dataAdapt);
 
     }
 
