@@ -14,18 +14,13 @@ CheckBox check;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user__sginup);
 
-        check = (CheckBox) findViewById(R.id.agre);
+        check = (CheckBox) findViewById(R.id.agree2);
 
     }
-
-    public void checked2(View view) {
-
+    public void checked(View view) {
         if (check.isChecked()){
             Intent intent = new Intent(User_Sginup.this ,U_Signup.class );
             startActivity(intent);
-                              }
-                                   }
-
-
-
+        }
+    }
 }
