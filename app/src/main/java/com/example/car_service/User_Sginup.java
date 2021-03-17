@@ -1,11 +1,11 @@
 package com.example.car_service;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class User_Sginup extends AppCompatActivity {
 CheckBox check;
