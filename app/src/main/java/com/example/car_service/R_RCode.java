@@ -6,18 +6,24 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Submition extends AppCompatActivity {
+public class R_RCode extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_submition);
+        setContentView(R.layout.r__r_code);
         getSupportActionBar().hide();
+
+
+
+
     }
 
-    public void submit2(View view) {
-        Intent intent = new Intent(Submition.this ,login.class );
+    public void R_S(View view) {
+
+        Intent intent = new Intent(R_RCode.this ,M_R_M.class );
         startActivity(intent);
         finish();
+
     }
 }
