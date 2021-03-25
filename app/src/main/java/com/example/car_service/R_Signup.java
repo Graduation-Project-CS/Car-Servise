@@ -18,14 +18,14 @@ public class R_Signup extends AppCompatActivity {
     private static final int RESULT_LOAD_IMAGE = 1;
     private static final int RESULT_LOAD_IMAGE2 = 1;
     Spinner spcity , azmwn;
-    ImageView w2;
+    ImageView w1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_r__signup);
         getSupportActionBar().hide();
 
-        w2 = (ImageView) findViewById(R.id.w2);
+        w1 = (ImageView) findViewById(R.id.w1);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -74,7 +74,7 @@ public class R_Signup extends AppCompatActivity {
 
     }
 
-    public void wena2(View view) {
+    public void wena1(View view) {
         Intent gallery2 = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(gallery2 , RESULT_LOAD_IMAGE2);
     }
@@ -86,12 +86,11 @@ public class R_Signup extends AppCompatActivity {
 
         if (requestCode == RESULT_LOAD_IMAGE2 && resultCode == RESULT_OK && data != null);
         Uri selectedImage = data.getData();
-        w2.setImageURI(selectedImage);
+        w1.setImageURI(selectedImage);
     }
 
 
     public void tomar(View view) {
-        Intent intent = new Intent(R_Signup.this ,R_RCode.class );
-        startActivity(intent);
+
     }
 }
