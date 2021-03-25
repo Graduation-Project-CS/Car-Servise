@@ -1,7 +1,5 @@
 package com.example.car_service;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,11 +13,13 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class U_Signup extends AppCompatActivity {
 
     private static final int RESULT_LOAD_IMAGE = 1;
     Spinner spcity;
-    ImageView w1;
+    ImageView w;
     Button button;
 
     @Override
@@ -27,7 +27,7 @@ public class U_Signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_u__signup);
 
-        w1 = (ImageView) findViewById(R.id.w1);
+        w = (ImageView) findViewById(R.id.w1);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -81,7 +81,7 @@ public class U_Signup extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && data != null) ;
         Uri selectedImage = data.getData();
-        w1.setImageURI(selectedImage);
+        w.setImageURI(selectedImage);
 
 
 
