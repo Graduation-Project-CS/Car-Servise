@@ -1,7 +1,5 @@
 package com.example.car_service;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,12 +9,15 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class Language_City extends AppCompatActivity {
  Spinner splang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language__city);
+        getSupportActionBar().hide();
 
         splang = (Spinner) findViewById(R.id.spinner);
 
@@ -35,7 +36,7 @@ public class Language_City extends AppCompatActivity {
     }
 
     public void next(View view) {
-        Intent i = new Intent(Language_City.this,info.class);
+        Intent i = new Intent(Language_City.this,login.class);
         startActivity(i);
     }
 }

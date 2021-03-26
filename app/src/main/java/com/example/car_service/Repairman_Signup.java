@@ -1,11 +1,11 @@
 package com.example.car_service;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Repairman_Signup extends AppCompatActivity {
 
@@ -15,6 +15,7 @@ public class Repairman_Signup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_repairman__signup);
+        getSupportActionBar().hide();
 
         check = (CheckBox) findViewById(R.id.agree);
 
