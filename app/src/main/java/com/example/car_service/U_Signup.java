@@ -6,11 +6,14 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +24,8 @@ public class U_Signup extends AppCompatActivity {
     Spinner spcity;
     ImageView w1;
     Button button;
+    EditText fname,lname,phone_no,age,password;
+    String full_name,age_get,phone,pass;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +33,11 @@ public class U_Signup extends AppCompatActivity {
         setContentView(R.layout.activity_u__signup);
 
         w1 = (ImageView) findViewById(R.id.w1);
-
+        fname= findViewById(R.id.fname);
+        lname= findViewById(R.id.lname);
+        phone_no= findViewById(R.id.phone);
+        age= findViewById(R.id.age);
+        password= findViewById(R.id.password);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
         spcity = (Spinner) findViewById(R.id.spinner2);
@@ -62,7 +71,7 @@ public class U_Signup extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(U_Signup.this ,Services.class ));
+                addUser();
             }
         });
 
@@ -88,4 +97,7 @@ public class U_Signup extends AppCompatActivity {
 
     }
 
+    //////////////////add user
+    void addUser(){
+    }
 }
