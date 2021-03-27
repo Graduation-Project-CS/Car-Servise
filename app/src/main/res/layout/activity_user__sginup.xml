@@ -6,63 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".User_Sginup">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".Repairman_Signup">
-
-        <CheckBox
-            android:id="@+id/agre"
-            android:layout_width="40dp"
-            android:layout_height="44dp"
-            android:gravity="center"
-            android:onClick="checked2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.956"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.954" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="356dp"
-            android:layout_height="463dp"
-            android:text="کۆمەڵێ مەرج"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.597" />
-
-        <TextView
-            android:id="@+id/textView10"
-            android:layout_width="361dp"
-            android:layout_height="74dp"
-            android:gravity="center"
-            android:text="مەرجەکان"
-            android:textSize="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.097" />
-
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="280dp"
-            android:layout_height="33dp"
-            android:text="تکایا مەرجەکان بەتەواوی بخوێنەرەوە "
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.955" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
     <TextView
         android:id="@+id/textView13"
         android:layout_width="361dp"
