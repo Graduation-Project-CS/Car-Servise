@@ -2,21 +2,27 @@ package com.example.car_service;
 
 public class UserHelperClass {
 
-    String id,full_name,age_get,phone,pass;
+    String id,full_name,age_get,phone,city,pass;
 
 
     public UserHelperClass() {
     }
 
-    public UserHelperClass(String id,String full_name,String age_get,String phone,String pass){
+
+    public UserHelperClass(String id, String full_name, String age_get, String phone, String city, String pass){
 
         this.id=id;
         this.full_name=full_name;
         this.age_get=age_get;
         this.phone=phone;
+        this.city=city;
         this.pass=pass;
 
     }
+
+    public String getCity() { return city; }
+
+    public void setCity(String city) { this.city = city; }
 
     public String getId() { return id; }
 

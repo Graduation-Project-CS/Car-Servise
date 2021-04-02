@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="0.191" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/age"
         android:layout_width="204dp"
         android:layout_height="41dp"
         android:background="@drawable/textview_border"
@@ -107,7 +107,7 @@
         app:layout_constraintVertical_bias="0.348" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password"
         android:layout_width="214dp"
         android:layout_height="36dp"
         android:background="@drawable/textview_border"
@@ -238,7 +238,7 @@
         app:layout_constraintVertical_bias="0.421" />
 
     <Spinner
-        android:id="@+id/azmwnykar"
+        android:id="@+id/job"
         android:layout_width="226dp"
         android:layout_height="41dp"
         android:background="@drawable/textview_border"
@@ -266,7 +266,7 @@
         app:layout_constraintVertical_bias="0.731" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/experience"
         android:layout_width="165dp"
         android:layout_height="36dp"
         android:background="@drawable/textview_border"
