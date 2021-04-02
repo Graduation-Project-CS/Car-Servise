@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.car_service">
-
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Car_Service">
-        <activity android:name=".Pishakan"></activity>
+        <activity android:name=".ScreenItem"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".IntroActivity" />
+        <activity android:name=".Pishakan" />
         <activity android:name=".Services" />
         <activity android:name=".U_Signup" />
         <activity android:name=".R_Signup" />
@@ -21,10 +22,7 @@
         <activity android:name=".Submition" />
         <activity android:name=".Forget_Password" />
         <activity android:name=".SignUP" />
-        <activity android:name=".Next2" />
-        <activity android:name=".next" />
         <activity android:name=".login" />
-        <activity android:name=".info" />
         <activity android:name=".Language_City" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -34,5 +32,8 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

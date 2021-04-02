@@ -1,8 +1,11 @@
 package com.example.car_service;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -17,6 +20,27 @@ public class Language_City extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language__city);
+
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+        // when this activity is about to be launch we need to check if its openened before or not
+
+        if (restorePrefData()) {
+
+            Intent mainActivity = new Intent(getApplicationContext(),Language_City.class );
+            startActivity(mainActivity);
+            finish();
+
+
+        }
+
+
+
+
+
         getSupportActionBar().hide();
 
         splang = (Spinner) findViewById(R.id.spinner);
@@ -39,4 +63,17 @@ public class Language_City extends AppCompatActivity {
         Intent i = new Intent(Language_City.this,login.class);
         startActivity(i);
     }
+
+
+    private boolean restorePrefData() {
+
+
+        SharedPreferences pref = getApplicationContext().getSharedPreferences("myPrefs",MODE_PRIVATE);
+        Boolean isIntroActivityOpnendBefore = pref.getBoolean("isIntroOpnend",false);
+        return  isIntroActivityOpnendBefore;
+
+
+
+    }
+
 }

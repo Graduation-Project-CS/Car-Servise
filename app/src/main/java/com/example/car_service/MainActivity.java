@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(MainActivity.this ,Language_City.class );
+                Intent intent = new Intent(MainActivity.this ,IntroActivity.class );
                 startActivity(intent);
                 finish();
             }
